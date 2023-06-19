@@ -1,0 +1,288 @@
+===========================================================================
+|This file (sn100-000-306-000-HFT-N16-siq-UDF1.dat) contains the input data for the code HFODD (2.49)|
+===========================================================================
+                          ----------  General data  ----------
+NUCLIDE
+            50  50
+ITERATIONS
+            900
+ITERAT_EPS
+            0.000010
+MAXANTIOSC
+            5
+PING-PONG
+            0.01  10
+MAXANTICON
+            0.01   5
+CHAOTIC
+            30
+PHASESPACE
+            0      0      0      0
+                          ----------  Interaction  -----------
+SKYRME-SET
+            UDF1
+SKYRME-STD
+            1      1      1      3      1
+LANDAU
+            110    1.0  1.0    0.4  1.70   -0.19 0.62
+EVE_SCA_TS   RHO       RHOD      LPR       TAU       SCU       DIV
+            1.  1.    1.  1.    1.  1.    1.  1.    1.  1.    1.  1.
+ODD_SCA_TS   SPI       SPID      LPS       CUR       KIS       ROT
+            1.  1.    1.  1.    1.  1.    1.  1.    1.  1.    1.  1.
+EVE_SCA_PM   RHO       RHOD      LPR       TAU       SCU       DIV
+            1.  1.    1.  1.    1.  1.    1.  1.    1.  1.    1.  1.
+ODD_SCA_PM   SPI       SPID      LPS       CUR       KIS       ROT
+            1.  1.    1.  1.    0.  0.    1.  1.    1.  1.    1.  1.
+                          ----------    Pairing    -----------
+G_SCALING
+            1.0  1.0
+INI_FERMI
+           -8.0 -8.0
+INI_DELTA
+            1.0  1.0
+FIXDELTA_N
+            1.0  1
+FIXDELTA_P
+            1.0  1
+PAIR_FORCE
+           -200. 0.0 1.0
+PAIRNFORCE  UDF0 fitted in actinides
+           -130.694693 0.0 1.0
+PAIRPFORCE  UDF0 fitted in actinides
+           -156.459175 0.0 1.0
+PAIRNINTER  UDF0 native
+           -170.374D0    0.32D0 1.0D0 
+PAIRPINTER  UDF0 native
+           -199.202D0    0.32D0 1.0D0 
+PAIRNINTER  UDEDF1
+           -186.065  0.32  1.0
+PAIRPINTER  UDEDF1
+           -206.580  0.32  1.0
+PAIRNINTER  UDEDF1 x 1.2
+           -223.278  0.32  1.0
+PAIRPINTER  UDEDF1 x 1.2
+           -247.896  0.32  1.0
+LIPKIN
+            0      0
+                          ----------  Numerical data  --------
+MAX_MULTIP
+            3      4      4
+MAX_MAGNET
+            0      1
+MAX_MAGORD
+            0
+MAX_SCHIFF
+            0      0
+SCHIFF_MOM
+            0
+COULOMB
+            80    79   0.25
+EPS_HERMIT
+            1.00E-14
+OPTI_GAUSS
+            1
+GAUSHERMIT
+            42    42    42
+PHASESPACE
+            0      0     0     0 
+                          ---  Parameters of the HO basis  ---
+BASIS_SIZE
+            16     0   800.
+HOMEGAZERO
+            1.2
+SURFAC_PAR
+            50  50   1.23
+ADPARBASIS
+            3
+SURFAC_DEF
+            2      0   0.0
+SURFAC_DEF
+            4      0   0.0
+                          ----------  Constraints  -----------
+OMEGAY
+            0.00
+OMEGA_XYZ
+            0.0  0.0  0.001 1
+SPINCONSTR
+                       0.00    0.   0
+SPICON_XYZ
+                       0.0002   0.0  0
+                       0.0002   0.0  0
+                       0.0002   0.5  0
+                          ----  Output-file  parameters  -----
+PRINT-ITER
+            1      0      1
+PRINT-MOME
+            1      1      1
+PRINT-SYME
+            0
+EALLMINMAX
+            -20.  10.
+EQUASI_MAX
+             10.
+NILSSONLAB
+            3
+HFBMEANFLD
+            1
+                          ----------  Symmetries   -----------
+ROTATION
+            1
+SIMPLEXY
+            0
+SIGNATUREY
+            0
+PARITY
+            1
+TSIMPLEXES
+            0      0
+TSIMPLEX_Y
+            0
+PAIRING
+            1
+HFB
+            1
+BCS
+            0
+HFB2HF
+            0      0
+GAP2HF
+            0.010  0.010
+TWOBASIS
+            1
+EVENQPNUMB
+            1
+                          ----------  Configurations  --------
+VACSIM_NEU
+            69    68
+VACSIM_PRO
+            44    44
+ VACNONANEU           13  11   9   7   5   3   1   1   3   5   7   9  11  13
+            3    13
+                      0   1   2   4   7  11  16  16  11   7   4   2   1   0
+ VACNONAPRO
+            3    13
+                      0   0   0   1   4   7  11  11   7   4   2   0   0   0
+VACPARANEU           13  11   9   7   5   3   1   1   3   5   7   9  11  13
+           -3    13
+                      1   1   2   3   5   7  10  10   7   5   3   2   1   1
+                      0   1   2   4   6   9  12  12   9   6   4   2   1   0 
+VACPAR_NEU
+            58    68
+VACPARAPRO
+           -3    13
+                      0   0   1   2   4   6   8   9   6   4   2   1   0   0
+                      0   1   1   2   3   5   7   7   5   3   2   1   1   0 
+VACPAR_PRO
+            44    38
+                          ----------  Numerical data  --------
+ YUKAWATERM
+            000.0  000.0  1.0 0.01 0.0 0.0 1 2
+SLOW-DOWN
+            0.80  0.80
+SLOW-PAIR
+            0.80
+SLOWALLFIL
+            0.80   1
+BROYDEN
+            0      0   0.0     0.0
+                          ----------  Constraints  -----------
+MULTCONSTR
+           -1      1   0.10    0.0  0
+           -1      0   0.10    0.0  0
+           -1     -1   0.10    0.0  0
+           -2      0   0.15  -10.0  1
+            3      0   0.10    3.0  0
+MULTLAGRAN
+           -1      1   0.00   0
+           -1      0   0.00   0
+           -1     -1   0.00   0
+           -2      0   0.00   1
+            3      0   0.00   0
+AXIALIZE
+            1
+                          ----------   Project   ------------
+KERNELFILE
+            sn100-000-306-000-HFT-N16-siq-UDF1.ker
+SAVEKERNEL
+            0
+PARAKERNEL
+            0    1  1  1  1
+PARA_ALL
+            0    1  1  1  1
+NUMBKERNEL
+            0
+PROJECTGCM
+            0  1  99  1  100  11  1 1 0
+CUTOVERLAP
+            1  1.0E-06  1.
+PRINT_AMP
+            1  99  2  1  1  0  1
+PROJPARNUM
+            0  09
+PRINT_ELEC
+            3
+TRANSITION
+            2  1  0
+TRANCUTPRI
+            0.001  0.001  0.01
+NEW_WIGNER
+            1
+PROJ-J2-T2
+            1      1
+                          ------------- Blocking -------------
+BLOCKSIQ_N
+            09     0     0
+ MBLOCSIZ_N
+            2
+            79     1
+            80     1
+BLOCKFIX_N
+            0      0
+BLOCKSIQ_N
+            45     0     0
+BLOCKSIZ_P
+            47     0
+BLOCKFIX_P
+            0      0
+                          -------------  Files  --------------
+REVIEW
+            0
+ ALLNILABS
+            10
+REVIEWFILE
+            sn100-000-306-000-HFT-N16-siq-UDF1.rev
+RECORDFILE
+            sn100-000-306-000-HFT-N16-siq-UDF1.rec
+REPLAYFILE
+            Pb208.oblate.UDF1.rec
+RECORDSAVE
+            1
+REC_FIELDS
+            sn100-000-306-000-HFT-N16-siq-UDF1.fic
+REP_FIELDS
+            Pb208.oblate.UDF1.fic
+FIELD_SAVE
+           -1
+LIPKINSAVE
+           -1
+COULOMFILE
+            in129-siz.cou
+FIELD_OLD
+            1
+COULOMSAVE
+            0      0
+                          -----  Starting the iteration  -----
+RESTART
+            1
+CONTAUGMEN
+            0
+CONT_PAIRI
+            1
+CONTFIELDS
+            0
+CONTLIPKIN
+            0
+                          ----------  Calculate  -------------
+EXECUTE
+                          ----------  Terminate  -------------
+ALL_DONE

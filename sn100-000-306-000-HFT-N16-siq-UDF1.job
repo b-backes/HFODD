@@ -1,0 +1,16 @@
+#!/bin/bash -l
+#SBATCH --account=PHYS-CAN-2019
+#SBATCH -e %x.%j.log
+#SBATCH -o %x.%j.log
+#SBATCH --cpus-per-task=1
+#SBATCH -n 1
+#SBATCH -t 48:00:00
+#SBATCH --mem-per-cpu=4000
+#
+##SBATCH --mail-type=ALL
+##SBATCH --mail-user=bctb501@york.ac.uk
+#
+module purge
+module load compiler/GCC/4.8.5
+
+time  ../hf316n         <sn100-000-306-000-HFT-N16-siq-UDF1.dat >sn100-000-306-000-HFT-N16-siq-UDF1.316n.out
